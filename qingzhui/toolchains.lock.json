@@ -1,0 +1,106 @@
+{
+  "platform": "macos-x86_64",
+  "tools": [
+    {
+      "name": "java",
+      "version": "25.0.5+8",
+      "filename": "OpenJDK25U-jdk_x64_mac_hotspot_25.0.5_8.tar.gz",
+      "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.5%2B8/OpenJDK25U-jdk_x64_mac_hotspot_25.0.5_8.tar.gz",
+      "sha256": "32cd4d2151c91aa00d0fc911edfd05245ed40fa6b1aa894d5f35c928cd67a59d",
+      "kind": "tar",
+      "destination": "toolchains/temurin-25.0.5+8",
+      "targets": [
+        "toolchains/temurin-25.0.5+8/jdk-25.0.5+8/Contents/Home/bin/java"
+      ],
+      "links": {
+        "toolchains/java": "toolchains/temurin-25.0.5+8/jdk-25.0.5+8/Contents/Home"
+      }
+    },
+    {
+      "name": "maven",
+      "version": "3.9.16",
+      "filename": "apache-maven-3.9.16-bin.tar.gz",
+      "url": "https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.16/apache-maven-3.9.16-bin.tar.gz",
+      "sha256": "80ffca22aed9e8b9713a232f3394fd81d7f20322df75efdb2b047dbd3e3a23bb",
+      "kind": "tar",
+      "destination": "toolchains",
+      "targets": [
+        "toolchains/apache-maven-3.9.16/bin/mvn"
+      ],
+      "links": {
+        "toolchains/maven": "toolchains/apache-maven-3.9.16"
+      }
+    },
+    {
+      "name": "colima",
+      "version": "0.10.3",
+      "filename": "colima-Darwin-x86_64",
+      "url": "https://github.com/abiosoft/colima/releases/download/v0.10.3/colima-Darwin-x86_64",
+      "sha256": "3082737fe8a98afda11cba7d9a20b6e56fe80c6153464beda04bec630758770b",
+      "kind": "binary",
+      "destination": "bin/colima",
+      "targets": [
+        "bin/colima"
+      ],
+      "links": {}
+    },
+    {
+      "name": "lima",
+      "version": "2.2.1",
+      "filename": "lima-2.2.1-Darwin-x86_64.tar.gz",
+      "url": "https://github.com/lima-vm/lima/releases/download/v2.2.1/lima-2.2.1-Darwin-x86_64.tar.gz",
+      "sha256": "6b776e4bc41f358e6ee01fefcc78e2eb26f11635a0fcff632234af77a566c6c4",
+      "kind": "tar",
+      "destination": "toolchains/lima-2.2.1",
+      "targets": [
+        "toolchains/lima-2.2.1/bin/limactl"
+      ],
+      "links": {
+        "toolchains/lima": "toolchains/lima-2.2.1"
+      }
+    },
+    {
+      "name": "buf",
+      "version": "1.75.0",
+      "filename": "buf-Darwin-x86_64.tar.gz",
+      "url": "https://github.com/bufbuild/buf/releases/download/v1.75.0/buf-Darwin-x86_64.tar.gz",
+      "sha256": "d04292081e76c19c613d2411b2d0b3619d6d49d54ce6cbcf9e12f72edce0532b",
+      "kind": "tar",
+      "destination": "toolchains/buf-1.75.0",
+      "targets": [
+        "toolchains/buf-1.75.0/buf/bin/buf"
+      ],
+      "links": {
+        "bin/buf": "toolchains/buf-1.75.0/buf/bin/buf"
+      }
+    },
+    {
+      "name": "docker",
+      "version": "29.7.2",
+      "filename": "docker-29.7.2.tgz",
+      "url": "https://download.docker.com/mac/static/stable/x86_64/docker-29.7.2.tgz",
+      "sha256": "fb1f1aa7ac7af4364165b9eadfda92e96c8ced508fca74f53079719891367438",
+      "kind": "tar",
+      "destination": "toolchains/docker-29.7.2",
+      "targets": [
+        "toolchains/docker-29.7.2/docker/docker"
+      ],
+      "links": {
+        "bin/docker": "toolchains/docker-29.7.2/docker/docker"
+      }
+    },
+    {
+      "name": "compose",
+      "version": "5.6.1",
+      "filename": "docker-compose-darwin-x86_64",
+      "url": "https://github.com/docker/compose/releases/download/v5.6.1/docker-compose-darwin-x86_64",
+      "sha256": "245c191b11a6345dd3b32b8f6eadeed1e1dcd5147aa46dfa423462e95f587e93",
+      "kind": "binary",
+      "destination": "docker/cli-plugins/docker-compose",
+      "targets": [
+        "docker/cli-plugins/docker-compose"
+      ],
+      "links": {}
+    }
+  ]
+}

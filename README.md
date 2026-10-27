@@ -1,3 +1,11 @@
+# Qingzhui SCA
+
+基于 OWASP Dependency-Track **5.2.1** 的二次开发 fork。定制分支为 `qingzhui-main`，官方仓库通过 `upstream` remote 保持关联。
+
+本地环境、源码构建、启动命令和官方版本更新方法见 [Qingzhui 开发指南](qingzhui/README.md)。前端仓库为 [qingzhui-sca-frontend](https://github.com/TPanic98/qingzhui-sca-frontend)。
+
+以下保留上游项目说明与许可证信息。
+
 <div align="center">
 
 # OWASP Dependency-Track
